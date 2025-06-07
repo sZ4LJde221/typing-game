@@ -45,7 +45,7 @@ export function resetAll({ isRestart = false } = {}) {
 
     // スコア・タイマー表示リセット
     document.getElementById("score").textContent = "スコア: 0";
-    document.getElementById("timer").textContent = "残り時間: 10秒";
+    document.getElementById("timer").textContent = "残り時間: 20秒";
     document.getElementById("wordDisplay").textContent = "";
 
     // 結果画面を隠す

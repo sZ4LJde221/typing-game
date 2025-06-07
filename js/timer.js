@@ -9,7 +9,7 @@ let remainingTime = 10; // 初期時間（秒）
  */
 
 export function startTimer(onTimeUp) {
-    remainingTime = 10; // カウントのリセット
+    remainingTime = 20; // カウントのリセット
     updateTimeUI(); // 最初の表示更新
 
     // 1秒ごとにこの関数が呼ばれる
