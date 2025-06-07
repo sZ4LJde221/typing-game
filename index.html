@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div id="currentNameDisplay">名前：未設定</div>
+        <h1>タイピングゲーム</h1>
+
+        <section id="gameArea">
+            <div id="wordDisplay">ここに単語が表示されます</div>
+            <!-- <input type="text" id="inputField" placeholder="ここに入力" autocomplete="off" inputmode="latin" disabled /> -->
+            <div class="status">
+                <span id="score">スコア: 0</span>
+                <span id="timer">残り時間: 10秒</span>
+            </div>
+            <div id="virtualKeyboard" class="keyboard"></div>
+
+            <div id="nameSetupArea">
+                <label for="playerName">名前を入力してください：</label>
+                <input type="text" id="playerName" placeholder="例：たろう" autocomplete="off" />
+                <button id="confirmNameButton" style="display: none;">変更を確定</button>
+                <button id="cancelNameEditButton" style="display: none;">キャンセル</button>
+            </div>
+
+            <div id="controlArea">
+                <button id="startButton">ゲームスタート</button>
+            </div>
+
+        </section>
+
+        <section id="resultArea" style="display: none;">
+            <h2>結果</h2>
+            <div id="finalScore"></div>
+
+            <div id="nameInputArea">
+                <button id="submitScoreButton">スコアを送信</button>
+            </div>
+
+            <button id="restartButton">もう一度プレイ</button>
+            <button id="changeNameButton">名前を変える</button>
+        </section>
+
+        <!-- 🔽 ランキングを独立したセクションに移動 -->
+        <section id="rankingArea" style="display: none;">
+            <div id="rankingTabs">
+                <button id="localTabButton">ローカル</button>
+                <button id="onlineTabButton">オンライン</button>
+            </div>
+
+            <div id="localRankingArea">
+                <h3>ローカルランキング</h3>
+                <ul id="localRanking"></ul>
+                <button id="showMoreLocalRanking" style="display:none;">もっと見る</button>
+                <button id="deleteLocalScoresButton">ローカルスコア削除</button>
+            </div>
+
+            <div id="onlineRankingArea" style="display: none;">
+                <h3>オンラインランキング</h3>
+                <ul id="onlineRankingList"></ul>
+                <button id="showMoreOnlineRanking" style="display: none;">もっと見る</button>
+                <button id="deleteOnlineScoresButton">オンラインスコア削除</button>
+            </div>
+        </section>
+
+
+        <!-- <button id="clearButton">保存データを全削除</button> -->
+    </div>
+
+    <script src="config.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>

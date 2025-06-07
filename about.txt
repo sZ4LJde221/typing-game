@@ -1,0 +1,52 @@
+python -m http.server 8000
+http://localhost:8000/
+
+db:
+Fg5iyaJvFxJ2TzQf
+typing-game
+github
+https://supabase.com/
+https://vweejqvqwprplypvaqoc.supabase.co
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ3ZWVqcXZxd3BycGx5cHZhcW9jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwMzI1NDgsImV4cCI6MjA2NDYwODU0OH0.IQUWf1Nn3qmTCvTWONvgUF9o_3n8rPjHFHyVtiu19Us
+
+//疑問点
+input.focus();
+input.addEventListener("input", handleInput);
+currentWord = words[Math.floor(Math.random() * words.length)];
+
+
+/**
+ * タイマーを開始する関数
+ * @param {function} onTimeUp - 時間切れ時に呼び出すコールバック関数
+ */
+ /**
+ * スコアを保存（既存の配列に追加して保存）
+ * @param {number} score
+ */
+ /**
+ * 保存されたスコア一覧を取得（なければ空配列）
+ * @returns {Array<{score: number, timestamp: number}>}
+ */
+
+ 戻り値として 「タイマーID」 が返ってくる → timerId に保存しておく
+
+    getScores((scores) => {
+      console.log("取得成功:", scores);
+  
+      if (scores.length === 0) {
+        const li = document.createElement("li");
+        li.textContent = "まだスコアが登録されていません。";
+        list.appendChild(li);
+        return;
+      }
+  
+      scores.forEach((item, index) => {
+        const li = document.createElement("li");
+        const date = new Date(item.timestamp).toLocaleString();
+        li.textContent = `${index + 1}位: ${item.score}点（${date}）`;
+        list.appendChild(li);
+      });
+    });
+
+
+
